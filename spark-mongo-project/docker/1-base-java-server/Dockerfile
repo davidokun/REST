@@ -2,9 +2,9 @@ FROM centos:7
 
 MAINTAINER David Cuellar, davidokun99@gmail.com
 
-ENV JAVA_VERSION=jdk1.7.0_79
-ENV JAVA_FILE_NAME=jdk-7u79-linux-x64.tar.gz
-ENV JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/7u79-b15/${JAVA_FILE_NAME}
+ENV JAVA_VERSION=jdk1.8.0_60
+ENV JAVA_FILE_NAME=jdk-8u60-linux-x64.tar.gz
+ENV JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/8u60-b27/${JAVA_FILE_NAME}
 ENV JAVA_HOME=/usr/local/${JAVA_VERSION}/
 ENV MAVEN_VERSION=3.3.3
 
@@ -33,3 +33,4 @@ RUN rm apache-maven-${MAVEN_VERSION}-bin.tar.gz
 RUN mv apache-maven-${MAVEN_VERSION} /opt/
 ENV MAVEN_HOME=/opt/apache-maven-${MAVEN_VERSION}
 ENV PATH "$PATH":${MAVEN_HOME}/bin:.:
+
