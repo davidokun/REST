@@ -13,3 +13,5 @@ hs_err_pid*
 basic-rest-api/.idea/
 *.iml
 basic-rest-api/target/
+spark-mongo-project/spark-mongo-app/.idea/
+spark-mongo-project/spark-mongo-app/target/
